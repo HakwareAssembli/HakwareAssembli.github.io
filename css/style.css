@@ -1,0 +1,112 @@
+*
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Hhenum';
+    src: url(/Fonts/Hhenum-Regular.otf);
+}
+
+.container{
+    width: 100%; 
+    height: 100%;
+    background-image: url(/Img/Black_cube_16_9.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.container::after {
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.203), rgba(0, 0, 0, 0.82));
+    bottom: 0%;
+    height: 10%;
+    width: 100%;
+    content: '';
+}
+
+.logo {
+    width: 25%;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    color: white;
+    font-family: 'Hhenum';
+
+}
+
+.content h1 {
+    width: 100%;
+    font-size: 400%; 
+    padding-left: 3%;
+}
+
+.discl{
+    font-size: 150%;
+    padding-left : 3%; 
+}
+
+.prompt {
+    position: absolute;
+    font-family: 'Hhenum';
+    color: white;
+    font-size: 250%;
+    top: 65%;
+    left: 81.5%; 
+}
+
+.FBIcon {
+    position: absolute;
+    width: 3%;
+    top: 92%;
+    left: 82%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.KijijiIcon {
+    position: absolute;
+    width: 3.3%;
+    top: 91%;
+    left : 87%;
+    cursor: pointer;
+    z-index: 10; 
+}
+
+.arrow {
+    position: absolute;
+    width: 5%;
+    top: 75%;
+    left: 84%;
+    animation: arrowAnim 1.5s linear infinite;
+}
+@keyframes arrowAnim {
+    0%, 100%{
+        top: 75%;
+    }
+    50%{
+        top: 78%;
+    }
+
+}
+.launchTime {
+    display: flex;
+    padding: 3%;
+}
+
+.launchTime div {
+    flex-basis: 7%;
+}
+
+.launchTime div p {
+    font-size: 400%;
+}

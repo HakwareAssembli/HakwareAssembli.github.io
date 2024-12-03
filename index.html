@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.00, maximum-scale=1.75" />
+    <title>Hakware Assembli - Coming Soon</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+        <img src="Img/HakwareAssembli_InvertedLogoNoBG.png" style="max-width: 100%; max-height: auto; "class="logo">
+        <a href="https://www.facebook.com/HakwareAssembli/" target="_blank"> 
+          <img src="Img/icons8-facebook-50NoBorder.png" style="max-width: 100%; max-height: auto;" class="FBIcon"> 
+        </a> 
+        <a href="https://www.kijiji.ca/v-desktop-computers/london/custom-pc-builds-upgrades-and-repairs/1706857580" target="_blank">
+          <img src="Img/kijiji_icon.jpg" style="max-width: 100%; max-height: auto;" class="KijijiIcon" >
+        </a>
+        <img src="Img/white_arrow.png" style="max-width: 100%; max-height: auto;" class="arrow">
+        <div class="content">
+                <h1>Website Coming Soon ... </h1>
+                <p class="discl">*Services AVAILABLE </p>
+                <div class="launchTime">
+                  <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                  </div>
+                  <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                  </div>
+                  <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                  </div>
+                  <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                  </div>
+                </div>
+        </div>
+        <p class="prompt">Click Me!</p>
+    </div>
+    <script>
+      var CDDate = new Date("Dec 16, 2024 12:00:00").getTime(); 
+      var fx = setInterval(function(){
+        var now = new Date().getTime(); 
+        var distance = CDDate - now;
+        
+        var days = Math.floor(distance / (1000 * 60 * 60  * 24));                
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));                
+        var minutes = Math.floor((distance % (1000 * 60 * 60 )) / (1000 * 60));                
+        var seconds = Math.floor((distance % (1000 * 60)) / (1000));     
+        
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+         
+      }, 1000);   
+    </script>
+    <!-- must convert distance, i.e time in between current time and set end time, and convert to days, hours, minutes, seconds; floor rounds number down-->
+    <!-- connect function to p IDs -->
+    <!-- run every 1000ms --> 
+  </body>
+</html>
