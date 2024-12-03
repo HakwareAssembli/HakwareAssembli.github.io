@@ -30,7 +30,7 @@
 }
 
 .logo {
-    width: 25%;
+    width: 40%;
     padding: 2%;
     cursor: pointer;
 }
@@ -46,12 +46,12 @@
 
 .content h1 {
     width: 100%;
-    font-size: 400%; 
+    font-size: 250%; 
     padding-left: 3%;
 }
 
 .discl{
-    font-size: 150%;
+    font-size: 100%;
     padding-left : 3%; 
 }
 
@@ -59,23 +59,23 @@
     position: absolute;
     font-family: 'Hhenum';
     color: white;
-    font-size: 250%;
-    top: 65%;
-    left: 81.5%; 
+    font-size: 150%;
+    top: 79%;
+    left: 76.5%; 
 }
 
 .FBIcon {
     position: absolute;
-    width: 3%;
+    width: 7%;
     top: 92%;
-    left: 82%;
+    left: 77%;
     cursor: pointer;
     z-index: 10;
 }
 
 .KijijiIcon {
     position: absolute;
-    width: 3.3%;
+    width: 7.3%;
     top: 92%;
     left : 87%;
     cursor: pointer;
@@ -84,29 +84,96 @@
 
 .arrow {
     position: absolute;
-    width: 5%;
-    top: 75%;
-    left: 84%;
+    width: 9%;
+    top: 83%;
+    left: 82%;
     animation: arrowAnim 1.5s linear infinite;
 }
 @keyframes arrowAnim {
     0%, 100%{
-        top: 75%;
+        top: 82%;
     }
     50%{
-        top: 78%;
+        top: 84.5%;
     }
-
 }
+
 .launchTime {
     display: flex;
     padding: 3%;
 }
 
 .launchTime div {
-    flex-basis: 7%;
+    flex-basis: 18%;
 }
 
 .launchTime div p {
     font-size: 400%;
+}
+
+@media (min-width: 600px) {
+    .logo {
+        width: 25%;
+        padding: 2%;
+        cursor: pointer;
+    }
+
+    .content h1 {
+        width: 100%;
+        font-size: 400%; 
+        padding-left: 3%;
+    }
+
+    .discl {
+        font-size: 150%;
+        padding-left : 3%
+    }
+
+    .prompt {
+        position: absolute;
+        font-family: 'Hhenum';
+        color: white;
+        font-size: 250%;
+        top: 65%;
+        left: 81.5%; 
+    }
+
+    .FBIcon {
+        position: absolute;
+        width: 3%;
+        top: 92%;
+        left: 82%;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .KijijiIcon {
+        position: absolute;
+        width: 3.3%;
+        top: 92%;
+        left : 87%;
+        cursor: pointer;
+        z-index: 10; 
+    }
+
+    .arrow {
+        position: absolute;
+        width: 5%;
+        top: 75%;
+        left: 84%;
+        animation: arrowAnim 1.5s linear infinite;
+    }
+
+    @keyframes arrowAnim {
+        0%, 100%{
+            top: 75%;
+        }
+        50%{
+            top: 78%;
+        }
+    }
+
+    .launchTime div {
+        flex-basis: 7%;
+    }
 }
