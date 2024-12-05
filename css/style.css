@@ -59,9 +59,9 @@
     position: absolute;
     font-family: 'Hhenum';
     color: white;
-    font-size: 150%;
+    font-size: 200%;
     top: 79%;
-    left: 76.5%; 
+    left: 70.5%; 
 }
 
 .FBIcon {
@@ -82,11 +82,20 @@
     z-index: 10; 
 }
 
+.DLIcon {
+    position: absolute;
+    width: 6.5%;
+    top: 92%;
+    left: 67%;
+    cursor: pointer;
+    z-index: 10;
+}
+
 .arrow {
     position: absolute;
     width: 9%;
     top: 83%;
-    left: 82%;
+    left: 76%;
     animation: arrowAnim 1.5s linear infinite;
 }
 @keyframes arrowAnim {
@@ -135,7 +144,7 @@
         color: white;
         font-size: 250%;
         top: 65%;
-        left: 81.5%; 
+        left: 79.5%; 
     }
 
     .FBIcon {
@@ -156,11 +165,20 @@
         z-index: 10; 
     }
 
+    .DLIcon {
+        position: absolute;
+        width: 2.8%;
+        top: 92%;
+        left: 77%;
+        cursor: pointer;
+        z-index: 10;
+    }
+
     .arrow {
         position: absolute;
         width: 5%;
         top: 75%;
-        left: 84%;
+        left: 81%;
         animation: arrowAnim 1.5s linear infinite;
     }
 
